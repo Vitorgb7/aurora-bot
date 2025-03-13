@@ -60,6 +60,18 @@ def generate_embeddings():
             logging.error(f"Erro ao gerar embeddings para {context}: {e}")
     return embeddings
 
+def search_similar_documents(prompt, top_k=5):
+    """
+    Função para buscar documentos similares no banco vetorial.
+    """
+    try:
+        similar_docs = search_similar_documents(prompt, top_k=top_k)
+        logging.debug(f"{len(similar_docs)} documentos semelhantes encontrados.")
+        return similar_docs
+    except Exception as e:
+        logging.error(f"Erro ao buscar documentos semelhantes: {e}")
+        return []
+
 def select_top_documents(similar_documents, max_documents=10):
     if not isinstance(similar_documents, list):
         logging.error(f"Formato inesperado para similar_documents: {type(similar_documents)}")
@@ -68,16 +80,20 @@ def select_top_documents(similar_documents, max_documents=10):
     sorted_documents = sorted(valid_documents, key=lambda x: x.get('score', 0), reverse=True)
     return sorted_documents[:max_documents]
 
-def get_rag_response(prompt: str):
+def get_rag_response(prompt: str, similar_documents=None):
     cached_response = get_cached_response(prompt)
     if cached_response:
         return cached_response
     
-    embeddings = generate_embeddings()
-    similar_documents = search_similar_documents(prompt)
+    # Se similar_documents não for fornecido, realiza a busca
+    if not similar_documents:
+        similar_documents = search_similar_documents(prompt)
+    
     top_documents = select_top_documents(similar_documents)
     
+    embeddings = generate_embeddings()  # Continue gerando embeddings aqui, ou passe como argumento
     context = "\n\n".join(embeddings)
+    
     if top_documents:
         context += "\n\nInformações adicionais:\n"
         for doc in top_documents:

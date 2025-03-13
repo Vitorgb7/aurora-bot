@@ -1,0 +1,141 @@
+{
+  "metadados": {
+    "cabecalho": {
+      "titulo": "Rede de Educação Municipal",
+      "descricao": "Dados das escolas municipais com informações geográficas",
+      "categoria_vcge": "http://vocab.e.gov.br/2011/03/vcge#educacao-basica",
+      "fonte_dados": "http://dados.recife.pe.gov.br",
+      "licenca": "Open Database License (ODbL)",
+      "responsavel_dados": "Secretaria de Infraestrutura e Serviços Urbanos",
+      "responsavel_disponibilizar": "EMPREL",
+      "frequencia_atualizacao": "Anual",
+      "endereco_dataset": "http://dados.recife.pe.gov.br/dataset/rede-de-educacao-municipal",
+      "status": "ativo",
+      "endereco_dataset_substituto": "",
+      "granularidade": "Descrição das Escolas Municipais",
+      "etiquetas": "Escolas, Localização"
+    },
+    "recursos": [
+      {
+        "identificador": "http://dados.recife.pe.gov.br/dataset/rede-de-educacao-municipal/resource/41f377fc-8b36-4115-acbc-0f4645f7a6ff",
+        "titulo": "Escolas Municipais",
+        "formato": "Json",
+        "descricao": "Descrição das Escolas Municipais"
+      }
+    ],
+    "campos": [
+      {
+        "codigo": "escola_codigo",
+        "descricao": "Código da Escola",
+        "tipo": "Num",
+        "tamanho": 16,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "escola_tipo",
+        "descricao": "Tipo de escola",
+        "tipo": "Char",
+        "tamanho": 3,
+        "valores_permitidos": "esc, cp, ep,nup,pro, ute"
+      },
+      {
+        "codigo": "rpa",
+        "descricao": "Região Político Administrativa (RPA)",
+        "tipo": "Num",
+        "tamanho": 16,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "escola_nome",
+        "descricao": "Nome das escolas",
+        "tipo": "Char",
+        "tamanho": 100,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "endereco",
+        "descricao": "Endereço",
+        "tipo": "Char",
+        "tamanho": 150,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "tipo_predio",
+        "descricao": "Tipo do Prédio",
+        "tipo": "Char",
+        "tamanho": 20,
+        "valores_permitidos": "prédio, alugado, cedido, nada consta, próprio"
+      },
+      {
+        "codigo": "mec_codigo",
+        "descricao": "Código da Escola no MEC",
+        "tipo": "Num",
+        "tamanho": 16,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "qtd_anexos",
+        "descricao": "Quantidade de Anexos da Escola",
+        "tipo": "Num",
+        "tamanho": 16,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "existe_biblioteca",
+        "descricao": "Existe bibiloteca",
+        "tipo": "Char",
+        "tamanho": 6,
+        "valores_permitidos": "não, sim"
+      },
+      {
+        "codigo": "existe_quadra",
+        "descricao": "Existe Quadra de esporte",
+        "tipo": "Char",
+        "tamanho": 6,
+        "valores_permitidos": "não, sim"
+      },
+      {
+        "codigo": "laboratorio_informatica",
+        "descricao": "Laboratório informática",
+        "tipo": "Num",
+        "tamanho": 16,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "sala_professor",
+        "descricao": "Sala de Professores",
+        "tipo": "Char",
+        "tamanho": 5,
+        "valores_permitidos": "não, sim, 0"
+      },
+      {
+        "codigo": "prog",
+        "descricao": "",
+        "tipo": "Char",
+        "tamanho": 20,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "qtd_atendidos",
+        "descricao": "Quantidade de Alunos Atendidos",
+        "tipo": "Char",
+        "tamanho": 10,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "atendimento_especial",
+        "descricao": "Atendimento Especial",
+        "tipo": "Char",
+        "tamanho": 30,
+        "valores_permitidos": ""
+      },
+      {
+        "codigo": "geometry",
+        "descricao": "Dados Geometricos",
+        "tipo": "Json",
+        "tamanho": null,
+        "valores_permitidos": ""
+      }
+    ]
+  }
+}

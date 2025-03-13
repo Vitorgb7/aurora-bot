@@ -1,0 +1,71 @@
+{
+	"metadados": {
+		"cabecalho": {
+			"titulo": "Calendário de Vacinação",
+			"descricao": "Dados do Calendário Nacional de Vacinação e das Unidades que possuem sala de Vacina",
+			"categoria_vcge": "http://vocab.e.gov.br/2011/03/vcge#calendario-vacinacao-adulto; http://vocab.e.gov.br/2011/03/vcge#calendario-vacinacao-crianca; http://vocab.e.gov.br/2011/03/vcge#calendario-vacinacao-idoso",
+			"fonte_dados": "http://dados.recife.pe.gov.br",
+			"licenca": "Open Database License (ODbL)",
+			"responsavel_dados": "Secretaria de Saúde",
+			"responsavel_disponibilizar": "EMPREL",
+			"frequencia_atualizacao": "Semestral",
+			"endereco_dataset": "http://dados.recife.pe.gov.br/dataset/calendario-de-vacinacao",
+			"status": "ativo",
+			"endereco_dataset_substituto": "",
+			"granularidade": "Dados sobre as vacinas",
+			"etiquetas": "Anti-Rábica, Febre Amarela, Unidades de saúde, vacinas, vacinação"
+		},
+		"recursos": [
+			{ 
+				"identificador": "http://dados.recife.pe.gov.br/dataset/calendario-de-vacinacao/resource/8222148c-14d1-47ba-ae0e-39c879246284",
+				"titulo": "Calendario de Vacinas",
+				"formato": "csv",
+				"descricao": "Calendário Básico de Vacinação em crianças, adolescentes, adultos e idosos"
+			}
+		],
+		"campos": [
+			{
+				"codigo": "idade",
+				"descricao": "Descrição da idade apta a receber a vacinação nos postos de saúde publicos",
+				"tipo": "Num",
+				"tamanho": 20,
+				"valores_permitidos": ""
+			},
+			{
+				"codigo": "Vacina",
+				"descricao": "Nome da Vacina",
+				"tipo": "Char",
+				"tamanho": 30,
+				"valores_permitidos": ""
+			},
+			{
+				"codigo": "doenca_protecao",
+				"descricao": "Descrição das doenças que protege",
+				"tipo": "Char",
+				"tamanho": 100,
+				"valores_permitidos": ""
+			},
+			{
+				"codigo": "dose",
+				"descricao": "Número da dosagem",
+				"tipo": "Num",
+				"tamanho": 50,
+				"valores_permitidos": ""
+			},
+			{
+				"codigo": "dose_qtd",
+				"descricao": "dosagem em ml ou gotas",
+				"tipo": "Char",
+				"tamanho": 10,
+				"valores_permitidos": ""
+			},
+			{
+				"codigo": "via_administracao",
+				"descricao": "Via de administração",
+				"tipo": "Char",
+				"tamanho": 4,
+				"valores_permitidos": "IM - intramuscular, ID - intradérmica, SC - Subcutânea, Oral - via oral"
+			}
+		]
+	}
+}

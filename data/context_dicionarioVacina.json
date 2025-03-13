@@ -1,0 +1,148 @@
+{
+    "metadados": {
+      "cabecalho": {
+        "titulo": "Unidades de Vacinação",
+        "descricao": "Dados do Calendário Nacional de Vacinação e das Unidades que possuem sala de Vacina",
+        "categoria_vcge": "http://vocab.e.gov.br/2011/03/vcge#saude",
+        "fonte_dados": "http://dados.recife.pe.gov.br",
+        "licenca": "Open Database License (ODbL)",
+        "responsavel_dados": "Secretaria de Saúde",
+        "responsavel_disponibilizar": "Emprel",
+        "frequencia_atualizacao": "Semestral",
+        "endereco_dataset": "http://dados.recife.pe.gov.br/dataset/calendario-de-vacinacao",
+        "status": "ativo",
+        "endereco_dataset_substituto": "",
+        "granularidade": "por unidade de saúde",
+        "etiquetas": "Anti-Rábica, Febre Amarela, Unidades de saúde, vacinas, vacinação"
+      },
+      "recursos": [
+        {
+          "identificador": "http://dados.recife.pe.gov.br/dataset/calendario-de-vacinacao/resource/3390a4cc-1ae6-42b0-8ff7-02f07547eece",
+          "titulo": "Unidades de vacinação",
+          "formato": "csv",
+          "descricao": "Contém as unidades de Saúde que aplicam a Vacina e o Soro anti-rábico no Recife"
+        }
+      ],
+      "campos": [
+        {
+          "codigo": "nome_oficial",
+          "descricao": "Nome da Unidade Vacinação",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "rpa",
+          "descricao": "Região Politico Administrativa",
+          "tipo": "Num",
+          "tamanho": 1,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "distrito_sanitario",
+          "descricao": "distrito sanitário - compreende uma área geográfica que comporta uma população com características epidemiológicas e sociais e suas necessidades, e os recursos de saúde para atendê-la",
+          "tipo": "Num",
+          "tamanho": 1,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "micro_regiao",
+          "descricao": "Subdivião de Região Político-Administrativa (Microrregião)",
+          "tipo": "char",
+          "tamanho": 3,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "cnes",
+          "descricao": "Código no Cadastro Nacional de Estabelecimentos de Saúde",
+          "tipo": "Num",
+          "tamanho": 8,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "cod_nat",
+          "descricao": "Natureza do Serviço",
+          "tipo": "Char",
+          "tamanho": 30,
+          "valores_permitidos": "Próprio, Parceria"
+        },
+        {
+          "codigo": "tipo_servico",
+          "descricao": "Tipo de serviço oferecido",
+          "tipo": "Char",
+          "tamanho": 30,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "endereco",
+          "descricao": "Endereço (Logradouro, número da residência)",
+          "tipo": "Char",
+          "tamanho": 50,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "bairro",
+          "descricao": "Nome do Bairro",
+          "tipo": "Char",
+          "tamanho": 30,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "fone",
+          "descricao": "Telefone de contato",
+          "tipo": "Char",
+          "tamanho": 30,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "servico",
+          "descricao": "Tipo do serviço",
+          "tipo": "Char",
+          "tamanho": 30,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "especialidade",
+          "descricao": "especialidade do serviço",
+          "tipo": "Char",
+          "tamanho": 300,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "como_usar",
+          "descricao": "explica com utilizar o serviço",
+          "tipo": "Char",
+          "tamanho": 300,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "horario",
+          "descricao": "Horário das aulas/exercício",
+          "tipo": "Char",
+          "tamanho": 300,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "ordem",
+          "descricao": "número de ordem. Utilizado internamente",
+          "tipo": "char",
+          "tamanho": 15,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "latitude",
+          "descricao": "Coordenadas geográficas em graus decimais - Latitude",
+          "tipo": "Num",
+          "tamanho": 20,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "longitude",
+          "descricao": "Coordenadas geográficas em graus decimais - Longitude",
+          "tipo": "Num",
+          "tamanho": 20,
+          "valores_permitidos": ""
+        }
+      ]
+    }
+  }

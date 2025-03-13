@@ -1,0 +1,148 @@
+{
+    "metadados": {
+      "cabecalho": {
+        "titulo": "Velocidade das Vias - Quantitativo por Velocidade Média",
+        "descricao": "Esse conjunto de dados apresenta os quantitativos de veículos por velocidade média no intervalo de 15 minutos. Os dados apresentados descrevem quantos veículos por equipamento passaram dentro de cada faixa de intervalor de tempo e de velocidade. Ex: Entre 08:00 e 08:15, no equipamento 022, passaram entre a velocidade de 0 - 10km/h um total de 60 veículos, entre 10 km/h e 20km/h um total de 67 veículos",
+        "categoria_vcge": "http://vocab.e.gov.br/id/governo#urbanismo",
+        "fonte_dados": "http://dados.recife.pe.gov.br",
+        "licenca": "Open Database License (ODbL)",
+        "responsavel_dados": "CTTU",
+        "responsavel_disponibilizar": "Emprel",
+        "frequencia_atualizacao": "mensal",
+        "endereco_dataset": "http://dados.recife.pe.gov.br/dataset/velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+        "status": "ativo",
+        "endereco_dataset_substituto": "",
+        "granularidade": "Esse conjunto de dados apresenta os quantitativos de veículos por velocidade média no intervalo de 15 minutos",
+        "etiquetas": "carro,  monitoramento,  radar,  transito,  transporte,  velocidade, velocidade das vias,  veículo,  vias,  vias públicas, mobilidade"
+      },
+      "recursos": [
+        {
+          "identificador": "http://dados.recife.pe.gov.br/dataset/velocidade-das-vias-quantitativo-por-velocidade-media-2025",
+          "titulo": "Velocidade das Vias - Quantitativo por Velocidade Média - 2025",
+          "formato": "csv",
+          "descricao": "Apresenta o quantitativo de veículos por intervalo de 15 minutos que passaram por faixa em cada equipamento. Os dados dos quantitativos estão separados por equipamento, faixa de leitura do equipamento, intervalo de hora (15 em 15 minutos) somando a quantidade veículos por intervalo de velocidade média(0-10km/h , 11km/h a 20km/h, 21km/h a 30 km/h...)"
+        }
+      ],
+      "campos": [
+        {
+          "codigo": "mes",
+          "descricao": "Mes de leitura do equipamento",
+          "tipo": "Num",
+          "tamanho": 2,
+          "valores_permitidos": "1,2,3,4,5,6,7,8,9,10,11,12"
+        },
+        {
+          "codigo": "equipamento",
+          "descricao": "Código do equipamento da via",
+          "tipo": "Char",
+          "tamanho": 10,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "faixa",
+          "descricao": "Faixa da via lida pelo equipamento",
+          "tipo": "Num",
+          "tamanho": 1,
+          "valores_permitidos": "1,2,3,4"
+        },
+        {
+          "codigo": "data",
+          "descricao": "Data de leitura pelo equipamento",
+          "tipo": "Date",
+          "tamanho": 10,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "hora",
+          "descricao": "Hora de leitura pelo equipamento",
+          "tipo": "Num",
+          "tamanho": 2,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "minutos_intervalo",
+          "descricao": "Intervalo dos Minutos considerado para leitura, dentro da hora informada, para a contagem de veículos",
+          "tipo": "char",
+          "tamanho": 10,
+          "valores_permitidos": "0-15, 16-30,31-45,46-59"
+        },
+        {
+          "codigo": "qtd_0a10km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_11a20km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_21a30km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_31a40km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_41a50km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_51a60km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_61a70km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_71a80km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_81a90km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_91a100km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "qtd_acimade100km",
+          "descricao": "Contagem de veículos que passaram nesse intervalo de velocidade, no equipemento descrito, no intervalo de data, hora e minutos.",
+          "tipo": "Num",
+          "tamanho": 5,
+          "valores_permitidos": ""
+        }
+      ]
+    }
+  }

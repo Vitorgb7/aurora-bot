@@ -1,0 +1,71 @@
+{
+    "metadados": {
+      "cabecalho": {
+        "titulo": "Faixas e Corredores de ônibus",
+        "descricao": "Localização de faixas azuis e rotas exclusivas de transporte público (ônibus / Táxi)",
+        "categoria_vcge": "http://vocab.e.gov.br/id/governo#transporte-rodoviario",
+        "fonte_dados": "http://dados.recife.pe.gov.br",
+        "licenca": "Open Database License (ODbL)",
+        "responsavel_dados": "Companhia de Trânsito e Transporte Urbano (CTTU)",
+        "responsavel_disponibilizar": "Emprel",
+        "frequencia_atualizacao": "Semestral",
+        "endereco_dataset": "http://dados.recife.pe.gov.br/dataset/faixas-e-corredores-de-onibus",
+        "status": "ativo",
+        "endereco_dataset_substituto": "",
+        "granularidade": "Por Faixas implantada e ano de implantação",
+        "etiquetas": "cttu, mobilidade, transporte, trânsito, ônibus, faixa azul, taxi"
+      },
+      "recursos": [
+        {
+          "identificador": "http://dados.recife.pe.gov.br/dataset/faixas-e-corredores-de-onibus/resource/4e7d896a-8842-4f5d-bf73-01f41b3c1da8",
+          "titulo": "Faixas e Corredores de ônibus",
+          "formato": "csv",
+          "descricao": "Contém os dados das Faixas Azuis, extensão e Rotas exclusivas para transportes públicos no Recife"
+        }
+      ],
+      "campos": [
+        {
+          "codigo": "faixa_azul",
+          "descricao": "nome da faixa exclusiva",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },      
+        {
+          "codigo": "bairro",
+          "descricao": "bairros por onde passam a faixa exclusiva",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },
+              {
+          "codigo": "faixa_azul",
+          "descricao": "nome da faixa exclusiva",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "extensão",
+          "descricao": "Extensão da faixa em quilometros",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "mes_implantacao",
+          "descricao": "mês em que a faixa exclusiva foi disponibilizada para uso",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        },
+        {
+          "codigo": "ano_implantacao",
+          "descricao": "ano em que a faixa exclusiva foi disponibilizada para uso",
+          "tipo": "Char",
+          "tamanho": 100,
+          "valores_permitidos": ""
+        }    
+      ]
+    }
+  }

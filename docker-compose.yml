@@ -10,7 +10,7 @@ services:
   app:
     build:
       context: .
-    container_name: chat-senses
+    container_name: aurora
     depends_on:
       - qdrant
     ports:

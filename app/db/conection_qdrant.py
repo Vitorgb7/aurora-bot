@@ -10,9 +10,6 @@ qdrant_client = QdrantClient(url="http://qdrant:6333")
 COLLECTION_NAME = "documents" 
 
 def create_collection_if_not_exists():
-    """
-    Verifica se a coleção existe no Qdrant. Caso não exista, cria uma nova.
-    """
     collections = qdrant_client.get_collections().collections
     existing_collections = [col.name for col in collections]
 
@@ -26,9 +23,6 @@ def create_collection_if_not_exists():
         print(f"Collection '{COLLECTION_NAME}' já existe.")
 
 def save_embeddings(chunks, embeddings):
-    """
-    Salva os embeddings gerados no Qdrant.
-    """
     points = [
         PointStruct(id=np.random.randint(1, 1e9), vector=embedding, payload={"text": chunk})
         for chunk, embedding in zip(chunks, embeddings)

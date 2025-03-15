@@ -20,7 +20,6 @@ def embed_text(text: str):
     return embeddings.flatten().tolist()
 
 def generate_embeddings_from_context_file(file_path: str):
-    """Lê um arquivo JSON, gera embeddings e salva no banco vetorial."""
     try:
         with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
